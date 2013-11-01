@@ -2,6 +2,7 @@
     "name": "martypenner.autosave-files-on-window-blur",
     "title": "Autosave Files on Window Blur",
     "description": "Autosave all files when switching applications, a la PHPStorm.",
+    "homepage": "https://github.com/martypenner/brackets-autosave-files-on-window-blur",
     "version": "1.0.0",
     "author": "Marty Penner <penner.marty@gmail.com>",
     "license": "MIT",
