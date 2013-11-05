@@ -5,10 +5,10 @@
 define(function () {
     "use strict";
     
-    var CommandManager = brackets.getModule('command/CommandManager');
+    var CommandManager = brackets.getModule("command/CommandManager");
     
-    $(window).on('blur', function () {
-        if (CommandManager.get('file.saveAll').getEnabled()) {
+    $(window).on("blur", function () {
+        if (CommandManager.get("file.saveAll").getEnabled()) {
             CommandManager.execute("file.saveAll");
         }
     });
