@@ -8,6 +8,8 @@ define(function () {
     var CommandManager = brackets.getModule('command/CommandManager');
     
     $(window).on('blur', function () {
-        CommandManager.execute("file.saveAll");
+        if (CommandManager.get('file.saveAll').getEnabled()) {
+            CommandManager.execute("file.saveAll");
+        }
     });
 });

@@ -1,0 +1,10 @@
+1.0.1
+===============================================================================
+
+- Ensure that the "save all" command isn't executed if it's not enabled
+  
+1.0.0
+===============================================================================
+
+- Initial release! Switch to another app when you have unsaved files open, and
+  they'll be saved automatically. Great for live reload setups.
