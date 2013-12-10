@@ -46,7 +46,7 @@ define(function () {
                 }
                 
                 var doc = DocumentManager.getOpenDocumentForPath(file.fullPath);
-                if (doc) {
+                if (doc && !doc.isUntitled()) {
                     var savePromise = CommandManager.execute(Commands.FILE_SAVE, {doc: doc});
                     savePromise
                         .done(function (newFile) {
