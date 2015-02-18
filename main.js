@@ -11,10 +11,11 @@
 define(function () {
     'use strict';
     
-    var CommandManager = brackets.getModule('command/CommandManager'),
-        Commands = brackets.getModule('command/Commands'),
+    var CommandManager  = brackets.getModule('command/CommandManager'),
+        Commands        = brackets.getModule('command/Commands'),
         DocumentManager = brackets.getModule('document/DocumentManager'),
-        Async = brackets.getModule('utils/Async');
+        MainViewManager = brackets.getModule("view/MainViewManager"),
+        Async           = brackets.getModule('utils/Async');
 
     /** Unique token used to indicate user-driven cancellation of Save As (as opposed to file IO error) */
     var USER_CANCELED = { userCanceled: true };
@@ -72,6 +73,6 @@ define(function () {
     
     // Save all changed (but not untitled) documents when Brackets loses focus
     $(window).on('blur', function () {
-        _saveFileList(DocumentManager.getWorkingSet());
+        _saveFileList(MainViewManager.getWorkingSet(MainViewManager.ALL_PANES));
     });
 });
