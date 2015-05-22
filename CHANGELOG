@@ -1,3 +1,9 @@
+1.0.6
+===============================================================================
+
+- Allow enabling/disabling the extension through a menu entry
+  (Edit -> Enable Autosave On Window Blur) and keyboard shortcut (Ctrl-Alt-Shift-W).
+
 1.0.5
 ===============================================================================
 
