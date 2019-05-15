@@ -1,12 +1,12 @@
 {
-    "name": "martypenner.autosave-files-on-window-blur",
-    "title": "Autosave Files on Window Blur",
-    "description": "Autosave all open files when switching applications, in the style of PHPStorm/WebStorm.",
-    "homepage": "https://github.com/martypenner/brackets-autosave-files-on-window-blur",
-    "version": "1.0.6",
-    "author": "Marty Penner <penner.marty@gmail.com>",
-    "license": "MIT",
-    "engines": {
-        "brackets": ">=0.34.0"
-    }
+  "name": "martypenner.autosave-files-on-window-blur",
+  "title": "Autosave Files on Window Blur",
+  "description": "Autosave all open files when switching applications, in the style of PHPStorm/WebStorm.",
+  "homepage": "https://github.com/martypenner/brackets-autosave-files-on-window-blur",
+  "version": "1.0.7",
+  "author": "Marty Penner <penner.marty@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "brackets": ">=0.34.0"
+  }
 }
