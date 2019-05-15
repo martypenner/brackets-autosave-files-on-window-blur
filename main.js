@@ -16,9 +16,9 @@ define(function() {
   /** Namespaced name of this module */
   var MODULE_NAME = 'martypenner.autosave-files-on-window-blur';
   /** Name of the preference used to store whether we're enabled or not */
-  var PREF_NAME = MODULE_NAME + '.enabled';
+  var PREF_NAME = 'enabled';
   /** Name the command package-style to avoid collisions */
-  var ENABLE_COMMAND_ID = PREF_NAME;
+  var ENABLE_COMMAND_ID = MODULE_NAME + '.' + PREF_NAME;
 
   var AppInit = require('utils/AppInit'),
     CommandManager = require('command/CommandManager'),
@@ -114,8 +114,8 @@ define(function() {
    */
   function _getToggler(prefName) {
     return function() {
-      var newPreference = !PreferencesManager.get(prefName);
-      PreferencesManager.set(prefName, newPreference);
+      var newPreference = !prefs.get(prefName);
+      prefs.set(prefName, newPreference);
 
       _updateCheckedState(newPreference);
       _setupEventListeners(newPreference);
