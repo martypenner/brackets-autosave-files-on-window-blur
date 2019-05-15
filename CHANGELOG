@@ -1,3 +1,8 @@
+1.0.7
+===============================================================================
+
+- Fix silly mistakes in accessing and saving the "enabled" preference
+
 1.0.6
 ===============================================================================
 
@@ -18,7 +23,7 @@
 1.0.3
 ===============================================================================
 
-- Ensure all files (not just the first) get saved (caused by core API 
+- Ensure all files (not just the first) get saved (caused by core API
   filesystem API change)
 
 1.0.2
@@ -31,7 +36,7 @@
 ===============================================================================
 
 - Ensure that the "save all" command isn't executed if it's not enabled
-  
+
 1.0.0
 ===============================================================================
 
